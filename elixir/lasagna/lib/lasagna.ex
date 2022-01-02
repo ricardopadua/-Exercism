@@ -3,9 +3,10 @@ defmodule Lasagna do
 
   def remaining_minutes_in_oven(minutes), do: expected_minutes_in_oven() - minutes
 
-  def preparation_time_in_minutes(layer),  do: layer * 2
+  def preparation_time_in_minutes(layers),  do: layers * 2
 
-  # Please define the 'total_time_in_minutes/2' function
+  def total_time_in_minutes(layers, minutes_in_the_oven), do:
+  preparation_time_in_minutes(layers) + minutes_in_the_oven
 
-  # Please define the 'alarm/0' function
+  def alarm, do: "Ding!"
 end
