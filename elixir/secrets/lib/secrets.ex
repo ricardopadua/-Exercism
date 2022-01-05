@@ -6,9 +6,7 @@ defmodule Secrets do
 
   def secret_multiply(secret), do: fn (params) -> params * secret end
 
-  def secret_divide(secret) do
-    # Please implement the secret_divide/1 function
-  end
+  def secret_divide(secret), do: fn (params) -> params / secret |> trunc() end
 
   def secret_and(secret) do
     # Please implement the secret_and/1 function
