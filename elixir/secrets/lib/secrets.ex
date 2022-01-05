@@ -4,9 +4,7 @@ defmodule Secrets do
 
   def secret_subtract(secret), do: fn (params) -> params - secret end
 
-  def secret_multiply(secret) do
-    # Please implement the secret_multiply/1 function
-  end
+  def secret_multiply(secret), do: fn (params) -> params * secret end
 
   def secret_divide(secret) do
     # Please implement the secret_divide/1 function
