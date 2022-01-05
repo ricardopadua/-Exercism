@@ -1,10 +1,8 @@
 defmodule Secrets do
 
-  def secret_add(secret), do: (fn params -> params + params end).(secret)
+  def secret_add(secret), do: fn (params) -> params + secret end
 
-  def secret_subtract(secret) do
-    # Please implement the secret_subtract/1 function
-  end
+  def secret_subtract(secret), do: fn (params) -> params - secret end
 
   def secret_multiply(secret) do
     # Please implement the secret_multiply/1 function
