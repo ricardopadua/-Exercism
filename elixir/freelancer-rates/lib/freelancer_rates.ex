@@ -1,11 +1,10 @@
 defmodule FreelancerRates do
-  def daily_rate(hourly_rate) do
-    # Please implement the daily_rate/1 function
-  end
+  @hourly_rate_times 8
 
-  def apply_discount(before_discount, discount) do
-    # Please implement the apply_discount/2 function
-  end
+  def daily_rate(hourly_rate), do: hourly_rate * @hourly_rate_times / 1
+
+  def apply_discount(before_discount, discount), do:
+
 
   def monthly_rate(hourly_rate, discount) do
     # Please implement the monthly_rate/2 function
